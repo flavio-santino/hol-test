@@ -49,10 +49,7 @@ In this practice, you sign in to the Oracle Cloud Infrastructure console using y
 
    ![]( img/image002.png)
 
-4. Enter your user name and password
-
-    - **Username:** *instructor will provide username*
-    - **Password:** *instructor will provide password*
+4. Enter your user name and password:
 
    ![]( img/image003.png)
 
