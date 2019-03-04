@@ -45,7 +45,7 @@ In this practice, you sign in to the Oracle Cloud Infrastructure console using y
 
    ![]( img/image001.png)
    
-   <img src="https://raw.githubusercontent.com/flavio-santino/hol-test/master/Identity_Access_Management/img/image001.png" alt="image-alt-text" height="800" width="800">
+   <img src="https://raw.githubusercontent.com/flavio-santino/hol-test/master/Identity_Access_Management/img/image001.png" alt="image-alt-text" height="400" width="600">
 
 3. Oracle Cloud Infrastructure is integrated with Identity Cloud Services, you will see a screen validating your Identity Provider. Click **Continue**.
 
