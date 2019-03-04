@@ -24,6 +24,13 @@ Oracle Cloud Infrastructure Identity and Access Management (IAM) Service lets yo
   -  URL for the Console: [https://console.us-ashburn-1.oraclecloud.com/](https://console.us-ashburn-1.oraclecloud.com/)
   -  Oracle Cloud Infrastructure supports the latest versions of Google Chrome, Firefox and Internet Explorer 11 
 
+## Cloud Credentials
+
+  * **Tenant Name:** {{Tenant_Name}}
+  * **User Name:** {{Username}}
+  * **Password:** {{Password}}
+  * **Compartment:**{{Compartment}} 
+
 
 
 ## Practice-1: Signing in to the Console 
