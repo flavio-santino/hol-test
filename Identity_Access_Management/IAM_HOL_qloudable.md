@@ -31,8 +31,6 @@ Oracle Cloud Infrastructure Identity and Access Management (IAM) Service lets yo
   * **Password:** {{Password}}
   * **Compartment:**{{Compartment}} 
 
-
-
 ## Practice-1: Signing in to the Console 
 
 **Overview**
@@ -42,23 +40,20 @@ In this practice, you sign in to the Oracle Cloud Infrastructure console using y
 1. Open a supported browser and go to the Console URL:  [https://console.us-ashburn-1.oraclecloud.com](https://console.us-ashburn-1.oraclecloud.com).
 
 2. Enter your tenant name and click **Continue**
-
-   ![]( img/image001.png)
-   
-   <img src="https://raw.githubusercontent.com/flavio-santino/hol-test/master/Identity_Access_Management/img/image001.png" alt="image-alt-text" height="100" width="100">
+  
+<img src="https://raw.githubusercontent.com/flavio-santino/hol-test/master/Identity_Access_Management/img/image001.png" alt="image-alt-text" height="100" width="100">
 
 3. Oracle Cloud Infrastructure is integrated with Identity Cloud Services, you will see a screen validating your Identity Provider. Click **Continue**.
 
-   ![]( img/image002.png)
+<img src="https://raw.githubusercontent.com/flavio-santino/hol-test/master/Identity_Access_Management/img/image002.png" alt="image-alt-text" height="100" width="100">
 
 4. Enter your user name and password:
 
-   ![]( img/image003.png)
+<img src="https://raw.githubusercontent.com/flavio-santino/hol-test/master/Identity_Access_Management/img/image003.png" alt="image-alt-text" height="100" width="100">
 
 5. When you sign in to the Console, the dashboard is displayed.
 
-   ![]( img/image004.png)
-
+<img src="https://raw.githubusercontent.com/flavio-santino/hol-test/master/Identity_Access_Management/img/image004.png" alt="image-alt-text" height="100" width="100">
 
 ## Practice-2: Managing Users, Groups and Policies to Control Access
 
@@ -77,10 +72,10 @@ We'll create users, groups, and policies to understand the concept.
    - **Name:** Enter a unique name for your group such as "oci-group” Note that the group name cannot contain spaces.
    - **Description:** Enter a description (for example, “New group for oci users”).
    - Click **Submit**.
+   
+   <img src="https://raw.githubusercontent.com/flavio-santino/hol-test/master/Identity_Access_Management/img/image005.png" alt="image-alt-text" height="100" width="100">
 
-   ![]( img/image005.png)
-
-   ![]( img/image006.png)
+   <img src="https://raw.githubusercontent.com/flavio-santino/hol-test/master/Identity_Access_Management/img/image006.png" alt="image-alt-text" height="100" width="100">
 
 4. Now, let’s **create a policy** that gives your group permissions in your assigned compartment. For example, creates a policy that gives permission to compartment **Demo** to members or group oci-group:
 
@@ -94,15 +89,11 @@ We'll create users, groups, and policies to understand the concept.
 
    e) Enter a **Description** (for example, "Policy for OCI Group").
 
-   f) Enter the following **Statement**:
-
-   ```
-   Allow group oci-group to manage all-resources in compartment Demo
-   ```
+   f) Enter the following **Statement**: `Allow group oci-group to manage all-resources in compartment Demo`
 
    g) Click **Create**.
-
-   ![]( img/image007.png)
+   
+   <img src="https://raw.githubusercontent.com/flavio-santino/hol-test/master/Identity_Access_Management/img/image007.png" alt="image-alt-text" height="100" width="100">
 
 5. Create a New User
 
@@ -116,7 +107,7 @@ We'll create users, groups, and policies to understand the concept.
     _This value is the user's login name for the Console and it must be unique across all other users in your tenancy._
    - **Description:** Enter a description. For example, New oci user.
 
-      ![]( img/image008.png)
+    <img src="https://raw.githubusercontent.com/flavio-santino/hol-test/master/Identity_Access_Management/img/image008.png" alt="image-alt-text" height="100" width="100">
     
    d) Click **Create**.
 
@@ -126,21 +117,21 @@ We'll create users, groups, and policies to understand the concept.
 
    b) Click **Create/Reset Password**.  
    
-   ![]( img/image009.png)
+   <img src="https://raw.githubusercontent.com/flavio-santino/hol-test/master/Identity_Access_Management/img/image009.png" alt="image-alt-text" height="100" width="100">
 
    c) In the dialog, click **Create/Reset Password**.
 
-   ![]( img/image011.png)
+   <img src="https://raw.githubusercontent.com/flavio-santino/hol-test/master/Identity_Access_Management/img/image011.png" alt="image-alt-text" height="100" width="100">
 
    d) The new one-time password is displayed.
 
-   ![]( img/image012.png)
+   <img src="https://raw.githubusercontent.com/flavio-santino/hol-test/master/Identity_Access_Management/img/image012.png" alt="image-alt-text" height="100" width="100">
 
    e) Click the **Copy** link and then click **Close**. Make sure to copy this password to your notepad.
 
    f) Click **Sign Out** from the user menu and log out of the admin user account.
 
-   ![]( img/image013.png)
+   <img src="https://raw.githubusercontent.com/flavio-santino/hol-test/master/Identity_Access_Management/img/image013.png" alt="image-alt-text" height="100" width="100">
 
 7. Sign in as the new user using a different web browser window.
 
@@ -152,14 +143,13 @@ We'll create users, groups, and policies to understand the concept.
 
    d) Enter the password that you copied.
 
-   ![]( img/image014.png)
+   <img src="https://raw.githubusercontent.com/flavio-santino/hol-test/master/Identity_Access_Management/img/image014.png" alt="image-alt-text" height="100" width="100">
 
    **Note:** _Since this is the first-time sign-in, the user will be prompted to change the temporary password, as shown in the screen capture._
 
    e) Set the new password to _Welc0me2*bmcs_. Click **Save New Password**.
 
-   ![]( img/image015.png)
-
+   <img src="https://raw.githubusercontent.com/flavio-santino/hol-test/master/Identity_Access_Management/img/image015.png" alt="image-alt-text" height="100" width="100">
 
 8. Verify user permissions
 
@@ -169,7 +159,7 @@ We'll create users, groups, and policies to understand the concept.
 
    c) The message “**You don’t have access to this compartment**” appears. This is normal as you did not add the user to the group where you associated the policy.
 
-   ![]( img/image016.png)
+   <img src="https://raw.githubusercontent.com/flavio-santino/hol-test/master/Identity_Access_Management/img/image016.png" alt="image-alt-text" height="100" width="100">
 
    d) Sign out of the Console.
 
@@ -187,7 +177,7 @@ We'll create users, groups, and policies to understand the concept.
 
    f) Click **Add**.
 
-   ![]( img/image017.png)
+   <img src="https://raw.githubusercontent.com/flavio-santino/hol-test/master/Identity_Access_Management/img/image017.png" alt="image-alt-text" height="100" width="100">
 
    g) Sign out.
 
@@ -199,7 +189,7 @@ We'll create users, groups, and policies to understand the concept.
 
       c) Select compartment **Demo** from the list of compartments on the left.
 
-      ![]( img/image018.png)
+      <img src="https://raw.githubusercontent.com/flavio-santino/hol-test/master/Identity_Access_Management/img/image018.png" alt="image-alt-text" height="100" width="100">
 
       d) There is no message related to permissions and you are allowed to create new instances
 
