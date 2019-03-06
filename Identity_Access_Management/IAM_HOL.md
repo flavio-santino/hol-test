@@ -24,6 +24,13 @@ Oracle Cloud Infrastructure Identity and Access Management (IAM) Service lets yo
   -  URL for the Console: [https://console.us-ashburn-1.oraclecloud.com/](https://console.us-ashburn-1.oraclecloud.com/)
   -  Oracle Cloud Infrastructure supports the latest versions of Google Chrome, Firefox and Internet Explorer 11 
 
+## Cloud Credentials
+
+  * **Tenant Name:** {{Tenant_Name}}
+  * **User Name:** {{Username}}
+  * **Password:** {{Password}}
+  * **Compartment:**{{Compartment}} 
+
 
 
 ## Practice-1: Signing in to the Console 
@@ -37,15 +44,14 @@ In this practice, you sign in to the Oracle Cloud Infrastructure console using y
 2. Enter your tenant name and click **Continue**
 
    ![]( img/image001.png)
+   
+   <img src="https://raw.githubusercontent.com/flavio-santino/hol-test/master/Identity_Access_Management/img/image001.png" alt="image-alt-text" height="100" width="100">
 
 3. Oracle Cloud Infrastructure is integrated with Identity Cloud Services, you will see a screen validating your Identity Provider. Click **Continue**.
 
    ![]( img/image002.png)
 
-4. Enter your user name and password
-
-    - **Username:** *instructor will provide username*
-    - **Password:** *instructor will provide password*
+4. Enter your user name and password:
 
    ![]( img/image003.png)
 
